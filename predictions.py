@@ -9,7 +9,7 @@ def get_cosine_distance(a, b):
     return (1 - F.cosine_similarity(a, b)).numpy()
 
 
-MODEL_PATH = r"C:/Users/Velmurgan Santhanam/Downloads/finalModel.pth"
+MODEL_PATH = r"finalModel.pth"
 model_instance = FBankCrossEntropyNet()
 model_instance.load_state_dict(torch.load(MODEL_PATH, map_location=lambda storage, loc: storage))
 model_instance = model_instance.double()

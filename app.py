@@ -2,6 +2,7 @@ import os
 import sys
 import logging
 
+
 import numpy as np
 from flask import Flask, render_template, request, Response
 
@@ -10,7 +11,7 @@ from predictions import get_embeddings, get_cosine_distance
 
 app = Flask(__name__)
 
-DATA_DIR = r'D:/Ashes _of_DeepBlue/demo/data_files/'
+DATA_DIR = 'D:\\sem project\\Voice_Based_Authentication\\data_files//'
 THRESHOLD = 0.45    # play with this value. you may get better results
 
 sys.path.append('..')
